@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="multiproject" basedir="." default="buildall">
+
+   <target name="project1">
+        <ant dir="./project1"/>
+   </target>
+
+   <target name="project2" depends="project1">
+        <ant dir="./project2"/>
+   </target>
+
+   <target name="project3" depends="project1, project2">
+        <ant dir="./project3"/>
+   </target>
+
+   <target name="buildall" depends="project3"/>
+
+</project>
