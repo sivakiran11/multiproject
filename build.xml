@@ -13,6 +13,18 @@
         <ant dir="./project3"/>
    </target>
 
+   <target name="AntExample1" depends="hello-world-war">
+        <ant dir="./AntExample1/>
+   </target>
+
+
+   <target name="hello-world-war" depends="project1">
+        <ant dir="./hello-world-war/>
+   </target>
+
+
+
+
    <target name="buildall" depends="project3"/>
 
 </project>
