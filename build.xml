@@ -13,12 +13,6 @@
         <ant dir="./project3"/>
    </target>
 
-
-
-
-
-
-
    <target name="buildall" depends="project3"/>
 
 </project>
