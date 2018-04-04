@@ -3,19 +3,29 @@
 
    <target name="project1">
         <ant dir="./project1"/>
-        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs">
+        <copy todir="/var/jenkins/workspace/ArchiveWarsJArsi_DEV">
         <fileset dir="/var/jenkins/workspace/multimodule_antproject/project1/com/ant/dist"/>
         </copy>
    </target>
 
    <target name="sample-helloworld-ant" depends="project1">
         <ant dir="./sample-helloworld-ant"/>
-        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs">
+        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs_DEV">
         <fileset dir="/var/jenkins/workspace/multimodule_antproject/sample-helloworld-ant/build/jar"/>
         </copy>
    </target>
 
 
-   <target name="buildall" depends="sample-helloworld-ant"/>
+   <target name="testbed-ant-sample" depends="sample-helloworld-ant">
+        <ant dir="./testbed-ant-sample"/>
+        <!-- <copy todir="/var/jenkins/workspace/ArchiveWarsJArs_DEV">
+        <fileset dir="/var/jenkins/workspace/multimodule_antproject/testbed-ant-sample/build/jar"/>
+        </copy> -->
+   </target>
+
+
+
+
+   <target name="buildall" depends="testbed-ant-sample"/>
 
 </project>
