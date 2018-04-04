@@ -3,7 +3,7 @@
 
    <target name="project1">
         <ant dir="./project1"/>
-        <copy todir="/var/jenkins/workspace/ArchiveWarsJArsi_DEV">
+        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs_DEV">
         <fileset dir="/var/jenkins/workspace/multimodule_antproject/project1/com/ant/dist"/>
         </copy>
    </target>
