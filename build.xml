@@ -3,10 +3,16 @@
 
    <target name="project1">
         <ant dir="./project1"/>
+        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs">
+        <fileset dir="/var/jenkins/workspace/multimodule_antproject/project1/com/ant/dist"/>
+        </copy>
    </target>
 
    <target name="sample-helloworld-ant" depends="project1">
         <ant dir="./sample-helloworld-ant"/>
+        <copy todir="/var/jenkins/workspace/ArchiveWarsJArs">
+        <fileset dir="/var/jenkins/workspace/multimodule_antproject/sample-helloworld-ant/build/jar"/>
+        </copy>
    </target>
 
 
