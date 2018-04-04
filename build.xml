@@ -5,14 +5,11 @@
         <ant dir="./project1"/>
    </target>
 
-   <target name="project2" depends="project1">
-        <ant dir="./project2"/>
+   <target name="sample-helloworld-ant" depends="project1">
+        <ant dir="./sample-helloworld-ant"/>
    </target>
 
-   <target name="project3" depends="project1,project2">
-        <ant dir="./project3"/>
-   </target>
 
-   <target name="buildall" depends="project3"/>
+   <target name="buildall" depends="sample-helloworld-ant"/>
 
 </project>
