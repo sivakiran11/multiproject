@@ -18,9 +18,9 @@
 
    <target name="model-ant-project" depends="sample-helloworld-ant">
         <ant dir="./model-ant-project"/>
-        <!-- <copy todir="/var/jenkins/workspace/ArchiveWarsJArs_DEV">
-        <fileset dir="/var/jenkins/workspace/multimodule_antproject/testbed-ant-sample/build/jar"/>
-        </copy> -->
+         <copy todir="/var/jenkins/workspace/ArchiveWarsJArs_DEV">
+        <fileset dir="/var/jenkins/workspace/multimodule_antproject/model-ant-project/build"/>
+        </copy>
    </target>
 
 
