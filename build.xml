@@ -13,7 +13,7 @@
         <ant dir="./project3"/>
    </target>
 
-   <target name="AntExample1" depends="project1">
+   <target name="AntExample1">
         <ant dir="./AntExample1"/>
    </target>
 
